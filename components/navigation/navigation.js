@@ -143,14 +143,14 @@ function Navigation(props) {
         <ExploreIcon className={ activePath.includes('/explorer') ? (props.theme.palette.type === 'light' ? classes.navigationOptionIconBlue : classes.navigationOptionIconWhite) : classes.navigationOptionIcon } />
         <Typography variant='h2' className={ activePath.includes('/explorer') ? (props.theme.palette.type === 'light' ? classes.colorBlue : classes.colorWhite) : null }>Explorer</Typography>
       </div>
-      <div className={ activePath.includes('/tokens') ? classes.navigationOptionActive : classes.navigationOption } onClick={ () => { handleNavigate('/tokens') }}>
+      {/* <div className={ activePath.includes('/tokens') ? classes.navigationOptionActive : classes.navigationOption } onClick={ () => { handleNavigate('/tokens') }}>
         <SwapVerticalCircleOutlinedIcon className={ activePath.includes('/tokens') ? (props.theme.palette.type === 'light' ? classes.navigationOptionIconBlue : classes.navigationOptionIconWhite) : classes.navigationOptionIcon } />
         <Typography variant='h2' className={ activePath.includes('/tokens') ? (props.theme.palette.type === 'light' ? classes.colorBlue : classes.colorWhite) : null }>Tokens</Typography>
-      </div>
-      <div className={ activePath.includes('/stats') ? classes.navigationOptionActive : classes.navigationOption } onClick={ () => { handleNavigate('/stats') }}>
+      </div> */}
+      {/* <div className={ activePath.includes('/stats') ? classes.navigationOptionActive : classes.navigationOption } onClick={ () => { handleNavigate('/stats') }}>
         <BarChartIcon className={ activePath.includes('/stats') ? (props.theme.palette.type === 'light' ? classes.navigationOptionIconBlue : classes.navigationOptionIconWhite) : classes.navigationOptionIcon } />
         <Typography variant='h2' className={ activePath.includes('/stats') ? (props.theme.palette.type === 'light' ? classes.colorBlue : classes.colorWhite) : null }>Stats</Typography>
-      </div>
+      </div> */}
     </React.Fragment>)
   }
 
